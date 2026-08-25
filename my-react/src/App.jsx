@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Daily from "./pages/Daily";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Health from "./pages/Health";
+import Skin from "./pages/Skin";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -17,6 +19,8 @@ function App() {
       {page === "daily" && <Daily />}
       {page === "signup" && <Signup />}
       {page === "login" && <Login />}
+      {page === "health" && <Health />}
+      {page === "skin" && <Skin />}
     </div>
   );
 }
