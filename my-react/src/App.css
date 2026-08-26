@@ -20,3 +20,180 @@
   border: none;
   cursor: pointer;
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f5ef;
+  color: #1c2621;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #0e0d0d;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links span {
+  cursor: pointer;
+}
+
+.nav-links button {
+  background-color: #17201b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.home {
+  padding: 30px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-card {
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.health-card {
+  background-color: #e2ede8;
+}
+
+.skin-card {
+  background-color: #f7e6ed;
+}
+
+.locked-card {
+  background-color: #ffffff;
+  border: 1px dashed #d8d3c4;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.assistant-page {
+  padding: 30px;
+}
+
+.chat-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bubble {
+  padding: 10px 15px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background-color: #1c2621;
+  color: white;
+}
+
+.bubble.bot {
+  align-self: flex-start;
+  background-color: #edeae1;
+}
+.daily-page {
+  padding: 30px;
+  max-width: 500px;
+}
+
+.add-task-row {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.add-task-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d8d3c4;
+}
+
+.add-task-row button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: #1c2621;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #edeae1;
+}
+
+.task-item.done {
+  background-color: #e2ede8;
+  text-decoration: line-through;
+}
+
+.task-item.missed {
+  background-color: #f7e6ed;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.tick-btn {
+  background-color: #2f6f5e;
+  color: white;
+}
+
+.cross-btn {
+  background-color: #d97ca0;
+  color: white;
+}
+
+.remove-btn {
+  background-color: #ffffff;
+  border: 1px solid #d8d3c4 !important;
+}
